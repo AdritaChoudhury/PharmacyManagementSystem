@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <h1 class="head">Welcome</h1>
+    <meta charset="utf-8">
+    <title>Hospital interface</title>
+    <style>
+      body{
+        background-image:url('https://cdn2.vectorstock.com/i/1000x1000/41/11/website-landing-page-hospital-doctors-and-nurses-vector-26564111.jpg');
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+          }
+          .head{
+           font-family: cursive;
+           font-style: oblique;
+           text-align: left;
+           color: black;
+           text-shadow: 2px 1px #403a3a;
+         }
+         .text-line text {
+           stroke-dasharray: 500;
+           stroke-dashoffset: 500;
+           animation: dash 5s linear forwards, filling 4s ease-in forwards;
+         }
+
+         @keyframes dash {
+           to {
+             stroke-dashoffset: 0;
+           }
+         }
+
+         @keyframes filling {
+           from{
+             fill: #2A4A73;
+             fill-opacity: 0;
+           }
+           to {
+             fill: #fcfcfa;
+             fill-opacity: 1;
+           }
+         }
+
+         .column {
+           float: left;
+           width: 33.3%;
+           height: 40%;
+           margin-bottom: 16px;
+           padding: 0 8px;
+         }
+
+         .card {
+           box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+           margin: 8px;
+         }
+
+         .about-section {
+           padding: 50px;
+           text-align: center;
+            background: linear-gradient(to right,#03C8A8,#89D8D3);
+           color: white;
+         }
+
+         .container {
+           padding: 0 16px;
+         }
+
+         .container::after, .row::after {
+           content: "";
+           clear: both;
+           display: table;
+         }
+
+         .title {
+           color: grey;
+         }
+
+         .button {
+           border: none;
+           outline: 0;
+           display: inline-block;
+           padding: 8px;
+           color: white;
+           background-color: #000;
+           text-align: center;
+           cursor: pointer;
+           width: 100%;
+         }
+
+         .button:hover {
+           background-color: #555;
+         }
+
+         @media screen and (max-width: 650px) {
+           .column {
+             width: 100%;
+             display: block;
+           }
+         }
+
+    </style>
+  </head>
+  <body>
+  <svg height="100" width="1000" stroke="#2A4A73" stroke-width="2" class="text-line">
+ <text style="font-family: 'Baloo Tamma', georgia, times, serif; font-weight: normal; font-style: normal" x="50" y="90" fill="none" font-size = "100">Hospital Interface</text>
+</svg>
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <img src="images/patient.jpg" alt="Patient info" style="width:100%">
+      <div class="container">
+        <h2>Patient </h2>
+        <p class="title">Click Here to check Patient info</p>
+        <p><a href="patient-info.php" class="button">Click here</a></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsw7AoElzTsnt1TMsaS60Ddqh0ELu_clYW1A&usqp=CAU" alt="Shop" style="width:100%">
+      <div class="container">
+        <h2>Visit Shop</h2>
+        <p class="title">Order</p>
+        <p>All kinds of medicines available</p>
+        <p><a href="C_interface.html" class="button">Click here</a></p>
+      </div>
+    </div>
+  </div>
+</div>
+  </body>
+</html>

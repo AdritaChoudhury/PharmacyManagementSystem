@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <h1 class="head">Hospital Login</h1>
+    <meta charset="utf-8">
+    <style>
+    body{ background: #000000;
+    background: -webkit-linear-gradient(to right,#F5F7FA,#B8C6DB);
+    background: linear-gradient(to right, #F5F7FA,#B8C6DB);
+    font-family: calibri;
+
+    }
+    .head{
+     font-family: cursive;
+     font-style: oblique;
+     text-align: left;
+     color: black;
+     text-shadow: 2px 1px #403a3a;
+
+    }
+
+    .textbox {
+       color:white;
+       height: 25px;
+       width: 100px;
+       border-radius: 25px;
+       border-bottom-color: rgb(39, 41, 37);
+       background-color: rgba(0, 0, 0, 0.5);
+
+    }
+    .textbox1{
+      color: white;
+      height: 25px;
+      width: 200px;
+       border-radius: 25px;
+      border-bottom-color: rgb(39, 41, 37);
+      background-color: rgba(0, 0, 0, 0.5);
+    }
+
+    .textbox:focus {
+       border: 0.5px solid black;
+       outline: none;
+     }
+
+    .topleftbox1{
+           display: inline-block;
+           position: absolute;
+           top:5%;
+           left: 80%;
+           padding: 10px 20px 10px 20px;
+            border-radius: 25px;
+           background-color: rgba(0,0,0,0.50);
+           font-size: 20px;
+           font-family: serif;
+           border:1px solid black;
+           font-weight: bold;
+           text-align: center;
+    }
+    #image1{
+           height:60px;
+           width:70px;
+           position: absolute;
+           top:-3%;
+           left:40%;
+    }
+
+    .toprightbox1{
+           display: inline-block;
+           position: absolute;
+            border-radius: 25px;
+           top:5%;
+           left: 90%;
+           padding: 10px 20px 10px 20px;
+           background-color: rgba(0,0,0,0.50);
+           font-size: 20px;
+           font-family: serif;
+           border:1px solid black;
+           font-weight: bold;
+           text-align: center;
+    }
+    a{
+           text-decoration: none;
+           color:white;
+    }
+    a:hover{
+           color: red;
+           text-decoration: underline;
+    }
+    .button{
+      color: white;
+      width: 80px;
+       border-radius: 25px;
+       background-color:black;
+    }
+    .box{
+     position: absolute;
+     top: 50%;
+     left: 50%;
+     transform: translate(-50%,-50%);
+     width: 380px;
+     padding: 20px;
+     background: linear-gradient(to right,#03C8A8,#89D8D3);
+     border: 1px solid black;
+     border-radius: 25px;
+     }
+    .insidebox{
+     text-align: center;
+     color: white;
+
+    }
+
+    </style>
+    <title>Login</title>
+  </head>
+  <body>
+    <h1 class='heading'> <b></b></h1>
+    <br> <br> <br> <br>
+   <div class="box">
+    <div class="insidebox">
+      <form action="hospital-login.php" method="POST">
+    <h2> <b> LOG IN </b></h2>
+    Hospital ID: <br>
+  <input type="text" class="textbox" name="HospitalId" placeholder="Hospital Id" required> <br> <br>
+  Hospital Name:<br>
+  <input type="text" class="textbox1" name="Name" placeholder="Enter Hospital name" required>
+  <br><br>
+
+
+    <button type="submit" name="hospital-login" class="button">LOG IN</button>
+  </form>
+     </div>
+    </div>
+    <div class="toprightbox1">
+          <a href="index.php">HOME</a>
+    </div>
+  </body>
+</html>
